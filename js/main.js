@@ -68,3 +68,14 @@ $("#lol_event").click(function(){
     $('.mobile_menu_event').slideToggle();
     $("#lol_event span i").toggleClass("fa-angle-down fa-angle-up");
 });
+
+$(".login_go").click(function(){
+    // $("#modal").css({"display":"flex"});
+    $("#modal").css('display', 'flex').hide().fadeIn();
+});
+$(".close-area").click(function(){
+    $("#modal").fadeOut();
+});
+// $(".modal-overlay").click(function(){
+//     $("#modal").fadeOut();
+// });

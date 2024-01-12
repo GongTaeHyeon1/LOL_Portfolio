@@ -111,6 +111,108 @@ input[id=trigger] {
     border-radius: 5px;
     cursor: pointer;
   }
+/* login_modal */
+#modal.modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 9999;
+}
+#modal .modal-window {
+    background: #ffffff;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 400px;
+    height: 500px;
+    position: relative;
+    top: 0;
+    padding: 10px;
+}
+#modal .title {
+    padding-left: 10px;
+    display: inline;
+    color: #000;
+    
+}
+#modal .title h2 {
+    display: inline;
+}
+#modal .close-area {
+    display: inline;
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+#modal .content {
+    margin-top: 80px;
+    padding: 0px 10px;
+    color: #000;
+}
+#modal .content #email_id, #modal .content #password{
+    border: 2px solid #000;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.login_id{
+    margin-bottom: 20px;
+}
+.login_type span{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.login_type .google{
+    border: 1px solid #ddd;
+}
+.login_type img{
+    width: 19px;
+    height: auto;
+    position: relative;
+    top: 4px;
+}
+.login_type, .login_click, .login_auto{
+    margin-top: 20px;
+}
+.login_click div{
+    width: 130px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login_click div:hover{
+    background-color: #65baff;
+    color: #fff;
+}
+.login_click div span{
+    position: relative;
+    top: 12px;
+}
+.login_click div span i{
+    margin-left: 5px;
+}
 /* MenuBar */
 .MenuBar{
     position: fixed;
@@ -160,6 +262,10 @@ input[id=trigger] {
 .Menu_center_List{
     margin-left: 20px;
     width: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
 }
 .Menu_List > a ul{
     visibility: hidden;
@@ -191,7 +297,22 @@ input[id=trigger] {
     background: rgb(75 75 75);
     transition: cubic-bezier(0.06, 0.81, 0, 0.98) 2s;
 }
-
+.Menu_center_List2{
+    margin-right: 20px;
+    width: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+.Menu_center_List2 .Menu_List a{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    background: #333;
+}
 /* section */
 .lol_video{
     width: 100%;
@@ -370,7 +491,6 @@ input[id=trigger] {
 .position_btn img{
     width: 30px;
     position: relative;
-    top: -3px;
     margin-right: 5px;
 }
 @media(max-width:1200px){
@@ -421,6 +541,14 @@ input[id=trigger] {
     }
     .champion_explanation > div{
         height: auto !important;
+    }
+    .position_btn img{
+        top: 0;
+    }
+}
+@media(min-width:1201px){
+    .position_btn img{
+        top: 7px;
     }
 }
 /* section2_2_body */
