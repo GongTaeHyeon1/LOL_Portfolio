@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>리그 오브 레전드 리뉴얼</title>
+  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="icon" href="./img/Favicon/LOL_Favicon.ico">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <!-- AOS 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <div>
+    <div class="MenuBar">
+        <div class="Menu_center">
+            <div class="Menu_Logo">
+                <a href="./main.html"><img src="./img/LoL_Logo_Icon_Package/LoL_Logo_Icon_Package/LoL_Icon_Flat_Gold/LoL_Icon_Flat_GOLD.png"></a>
+            </div>
+            <div class="Menu_center_List">
+                <div class="Menu_List">
+                    <a>
+                        <p>게임소식</p>
+                        <ul class="Menu_sub_list">
+                            <li>
+                                <span>게임 역사</span>
+                            </li>
+                            <li>
+                                <span>챔피언</span>
+                            </li>
+                            <li>
+                                <span>패치노트</span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="Menu_List">
+                    <a>
+                        <p>다운로드</p>
+                    </a>
+                </div>
+                <div class="Menu_List">
+                    <a>
+                        <p>E-스포츠</p>
+                    </a>
+                </div>
+                <div class="Menu_List">
+                    <a>
+                        <p>이벤트</p>
+                        <ul class="Menu_sub_list">
+                            <li>
+                                <span>겨울 이벤트</span>
+                            </li>
+                            <li>
+                                <span>PC방 이벤트</span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="Menu_List">
+                    <a>
+                        <p>고객지원</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile_menu">
+                <input type="checkbox" id="trigger">
+                <label for="trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="sildebar">
+        <div class="sildebar_1">
+            <p id="game_news" class="mobile_submenu">게임소식<span><i class="fas fa-angle-down"></i></span></p>
+            <div class="mobile_menu_news">
+                <p>게임 역사</p>
+                <p>챔피언</p>
+                <p>패치노트</p>
+            </div>
+            <p class="mobile_submenu">다운로<span></span></p>
+            <p class="mobile_submenu">E-스포츠<span></span></p>
+            <p id="lol_event" class="mobile_submenu">이벤트<span><i class="fas fa-angle-down"></i></span></p>
+            <div class="mobile_menu_event">
+                <p>겨울 이벤트</p>
+                <p>pc방 이벤트</p>
+            </div>
+            <p class="mobile_submenu">고객지원<span></span></p>
+        </div>
+        <div class="login">
+            <span>로그인</span>
+            <span>회원가입</span>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="section_top">
+        <section>
+            <div class="lol_video">
+                <video muted autoplay playsinline loop>
+                    <source src="./img/lol_video.webm">
+                </video>
+                <div class="section_log">
+                    <img src="./img/LoL_Logo_Icon_Package/LoL_Logo_Icon_Package/LoL_Logo_Rendered_Large/LoL_Logo_Rendered_LARGE.png">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section1_body">
+        <div class="section1_title">주요 소식</div>
+        <div class="content_body">
+            <div class="content_body_div my_shop" data-aos="fade-up" data-aos-duration="1000">
+                <div class="content d-i-b">
+                    <img src="./img/content_img/my_shop.jpg">
+                </div>
+                <div class="d-i-b content_news">
+                    <p class="news_title">12월만을 위한 만남의 상자를 열어보세요</p>
+                    <p class="news_title2">PC와 모바일에서도 만남의 상자를 열어보세요</p>
+                </div>
+            </div>
+            <div class="content_body_div kda_popstar" data-aos="fade-up" data-aos-duration="2000">
+                <div class="content">
+                    <video muted autoplay playsinline loop style="width:100%;height: 100%;object-fit: cover;">
+                        <source src="./img/KDA_POPSTAR.webm">
+                    </video>
+                </div>
+                <div class="d-i-b content_news">
+                    <p class="news_title">K/DA POP/STAR 시네마틱</p>
+                    <P class="news_title2">아리,아칼리,카이사,이블린이 함께추는 K/DA 시네마틱</P>
+                </div>
+            </div>
+            <div class="content_body_div" data-aos="fade-up" data-aos-duration="3000">
+                <div class="content">
+                    <img src="./img/content_img/UpDate.jpg"></img>
+                </div>
+                <div class="d-i-b content_news">
+                    <p class="news_title">개발 업데이트 : 시즌 및 챔피언</p>
+                    <P class="news_title2">2023년 마지막 시즌 및 챔피언 업데이트 내용입니다</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2_body">
+        <div class="champion_title">
+            <span>챔피언 소개</span>
+            <p>소환사협곡에는 다양한 포지션의 역할군이 있습니다</p>
+        </div>
+        <div class="champion_intro">
+            <div>
+                <a class="m-r-15 position_btn" data-tab="tab1"><img src="./img/role_group_img/role_group1.png">암살자</a>
+                <a class="m-r-15 position_btn" data-tab="tab2"><img src="./img/role_group_img/role_group2.png">전사</a>
+                <a class="m-r-15 position_btn" data-tab="tab3"><img src="./img/role_group_img/role_group6.png">탱커</a>
+                <a class="m-r-15 position_btn" data-tab="tab4"><img src="./img/role_group_img/role_group3.png">마법사</a>
+                <a class="m-r-15 position_btn" data-tab="tab5"><img src="./img/role_group_img/role_group4.png">원거리 딜러</a>
+                <a class="position_btn" data-tab="tab6"><img src="./img/role_group_img/role_group5.png">서포터</a>
+            </div>
+            <div class="champion_info">
+                <div class="champion_explanation">
+                    <div id="tab1" class="assassin show">
+                        <div class="champion_text">
+                            <span class="champion1">
+                                암살자는 눈 깜짝할 사이에 적을 해치울 수 있는 기회를 엿보는 챔피언입니다. 체력이 약하긴 하지만 민첩하게 피해를 입히는 유형의 근접 챔피언으로, 재빠르게 상대의 목숨을 끊는 전략을 사용합니다. 일반적으로 기동성이 뛰어나고 하나의 대상을 표적으로 삼습니다. 주로 원거리 딜러나 마법사가 표적이 됩니다.
+                            </span>
+                        </div>
+                        <div class="champion_img">
+                            <img src="./img/champion_img/zed.png" style="width: 600px;">
+                        </div>
+                    </div>
+                    <div id="tab2" class="warrior">
+                        <div class="champion_text">
+                            <span class="champion1">
+                                적군에게 피해를 입히고 아군을 방어하는 능력을 모두 갖춘 챔피언입니다. 전사는 강인하며 공격력에 집중하는 근거리 챔피언으로 전장 한가운데에서 활약합니다. 피해량이 높은 원거리 딜러나 마법사, 그리고 생존력이 뛰어난 탱커의 장점을 두루 지니고 있어 상황 적응력이 탁월합니다.
+                            </span>
+                        </div>
+                        <div class="champion_img">
+                            <img src="./img/champion_img/Jayce.png" style="width: 300px;">
+                        </div>
+                    </div>
+                    <div id="tab3" class="tanker">
+                        <div class="champion_text">
+                            <span class="champion1">
+                                탱커는 공격에 잘 견디며 무시할 수 없는 공격력으로 적을 혼란에 빠트리는 역할을 합니다. 주로 적의 공격을 중단시키거나 저지함으로써 판세를 뒤흔들어 놓습니다. 생존력이 강한 챔피언으로서 처치하기가 어렵기 때문에 전방에 배치하기 안성맞춤입니다.
+                            </span>
+                        </div>
+                        <div class="champion_img">
+                            <img src="./img/champion_img/Alistar.png" style="width: 600px;">
+                        </div>
+                    </div>
+                    <div id="tab4" class="wizard">
+                        <div class="champion_text">
+                            <span class="champion1">
+                                마법사는 공격형 주문술사로, 강력한 주문으로 적을 속수무책으로 만들거나 처치해 버립니다. 기본 공격은 약한 편이지만 스킬이 강력하여 스킬 사용에 주력합니다. 마법사 중에는 막대한 피해를 입히는 챔피언도 있지만 보조 기술을 발휘하거나 전장을 통제하는 데에 집중하는 챔피언도 있습니다.
+                            </span>
+                        </div>
+                        <div class="champion_img">
+                            <img src="./img/champion_img/Lux.png" style="width: 600px;">
+                        </div>
+                    </div>
+                    <div id="tab5" class="onedeal">
+                        <div class="champion_text">
+                            <span class="champion1">
+                                원거리 딜러는 아슬아슬한 경계를 넘나들며 주로 기본 공격으로 장거리에서 안정적으로 꾸준히 피해를 입히는 게 특기입니다. 안전하게 카이팅할 수 있는 능력이 있긴 하지만 체력이 매우 약하며 강력한 아이템을 갖춰야만 적에게 제대로 된 피해를 가할 수 있습니다. 상대와 거리를 둔 상태에서 막대한 피해를 입히며 주로 공격력과 공격 속도를 높이는 아이템이 도움이 됩니다. 체력이 낮은 편이기 때문에 위치 선정에 신중을 기해야 하며, 파괴력을 최대치로 끌어올리려면 긴밀한 팀워크가 필요합니다.
+                            </span>
+                        </div>
+                        <div class="champion_img">
+                            <img src="./img/champion_img/lsrael.png" style="width: 300px;">
+                        </div>
+                    </div>
+                    <div id="tab6" class="supporter">
+                        <div class="champion_text">
+                            <span class="champion1">
+                                방어형 주문술사이며 치유나 방어 등을 통해 아군을 보조하거나 군중 제어 기술로 적을 방해하여 유리한 기회를 만들어주며 전장을 지휘하는 조력자 역할을 합니다. 일반적으로 피해량은 낮지만 높은 보조기술과 탁월한 전장 통제 능력을 자랑합니다.
+                            </span>
+                        </div>
+                        <div class="champion_img">
+                            <img src="./img/champion_img/Leona.png" style="width: 500px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2_2_body">
+        <div class="section2_2_bg">
+            <img src="./img/gorge2.jpg" style="object-fit: cover;">
+            <div class="enjoy_champions">
+                <div class="enjoy_champions_parent_div">
+                    <div class="enjoy_champions_child_div">
+                        <img src="./img/section2_2_img/section2_2_img1.png">
+                    </div>
+                    <div class="enjoy_champions_child_div">
+                        <img src="./img/section2_2_img/section2_2_img2.png">
+                    </div>
+                    <div class="enjoy_champions_child_div">
+                        <img src="./img/section2_2_img/section2_2_img5.png">
+                    </div>
+                </div>
+            </div>
+            <div class="explanation">
+                <p class="explanation_title1" data-aos="fade-up">화려한<br>챔피언과 스킨</p>
+                <p class="explanation_title2" data-aos="fade-up">원하는 챔피언과 스킨을 취향에 맞게 변경해보세요.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section2_3_body">
+        <div class="section2_3_map">
+            <img src="./img/map/lolmap.png">
+        </div>
+        <div class="map_explanation">
+            <p class="explanation_title1" data-aos="fade-up">전설의 시작</p>
+            <p class="explanation_title2" data-aos="fade-up">리그 오브 레전드의 소환사 협곡을 배워보세요</p>
+            <div class="play">
+                <div class="m-r-15">
+                    <span>시작하기</span>
+                </div>
+                <div>
+                    <span>무료플레이</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2_4_body">
+        <div class="more">
+            <p class="more1" data-aos="fade-up">더 자세히</p>
+            <p class="more2" data-aos="fade-up">알아보기</p>
+            <div class="v-story-wrap con">
+                <h2 class="v-story-tt" data-aos="fade-up">World Championship 역대 우승팀</h2>
+                <div class="v-story-slider" data-aos="fade-up">
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box block">
+                                <img src="./img/Championship/Fnatic.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2011 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">Fnatic</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/TPA.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2012 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">TPA</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/T1.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2013 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">T1</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/SamsungGalaxy.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2014 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">SamsungGalaxy</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/T1_2.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2015 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">T1</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/T1_3.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2016 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">T1</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/SamsungGalaxy_2.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2017 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">SamsungGalaxy</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/IG.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2018 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">IG</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/FPX.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2019 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">FPX</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/DWG.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2020 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">DWG</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/EDG.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2021 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">EDG</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/DRX.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2022 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">DRX</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#none" class="block">
+                            <div class="img-box">
+                                <img src="./img/Championship/T1_4.jpg">
+                            </div>
+                            <div class="discover">
+                                <span class="discover-btn block"></span>
+                                <span class="discover-txt block"></span>
+                            </div>
+                        </a>
+                        <div class="v-story-desc-list">
+                            <p class="v-story-desc-tt">2023 시즌 World Championship 우승</p>
+                            <p class="v-story-desc">T1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section3_last_body">
+        <video muted autoplay playsinline loop style="width: 100%;">
+            <source src="./img/lol_vidio2.webm">
+        </video>
+    </div>
+    <div class="section_footer" style="background: #212121;color: #fff;">
+        <div class="footer_capi">
+            <p class="capi_title">™ & © 2023 Riot Games, Inc.  League of Legends and all related logos, characters, names and distinctive likenesses thereof are exclusive property of Riot Games, Inc.  All Rights Reserved.</p>
+            <p class="m-n">라이엇게임즈코리아 유한회사 서울특별시 강남구 테헤란로 521 30층 (삼성동, 파르나스타워)</p>
+            <p>대표자 : 조혁진 | 대표전화 : 02-3454-1560 | FAX : 02-3454-1565 사업자등록번호 : 120-87-68488</p>
+            <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+        </div>
+    </div>
+    </div>
+    <script  src="./js/script2.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+<!-- <script>
+    AOS.init();
+</script> -->
+</html>
