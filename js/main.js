@@ -79,3 +79,17 @@ $(".close-area").click(function(){
 // $(".modal-overlay").click(function(){
 //     $("#modal").fadeOut();
 // });
+
+$(".login_click div").click(function(){
+    if($('#email_id').val() == ""){
+        $('#email_id').focus();
+
+        alert('계정을 입력해주세요.');
+    }else if($('#password').val()==""){
+        $('#password').focus();
+
+        alert('비밀번호를 입력해주세요.');
+    }else{
+        $('#login_form').attr("target", "_self").submit();
+    }
+});

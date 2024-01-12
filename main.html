@@ -120,36 +120,38 @@
     <div class="overlay"></div>
 
     <div id="modal" class="modal-overlay">
-        <div class="modal-window">
-            <div class="title">
-                <h2>로그인</h2>
-            </div>
-            <div class="close-area"><i class="fas fa-times"></i></div>
-            <div class="content">
-                <div class="login_id">
-                    <input type="text" id="email_id" placeholder="계정 이메일">
+        <form action="#" id="login_form">
+            <div class="modal-window">
+                <div class="title">
+                    <h2>로그인</h2>
                 </div>
-                <div class="login_password">
-                    <input type="text" id="password" placeholder="비밀번호">
-                </div>
-                <div class="login_type">
-                    <span class="facebook" style="background: #1778f2;"><img src="./img/login_type/facebook_logo.png"></span>
-                    <span class="google"><img src="./img/login_type/google_logo.png"></span>
-                    <span class="apple" style="background: #000;"><img src="./img/login_type/apple_logo.png"></span>
-                </div>
-                <div class="login_auto">
-                    <label class="container">자동 로그인
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="login_click">
-                    <div>
-                        <span>로그인 하기<i class="fas fa-arrow-right"></i></span>
+                <div class="close-area"><i class="fas fa-times"></i></div>
+                <div class="content">
+                    <div class="login_id">
+                        <input type="text" id="email_id" placeholder="계정 이메일">
+                    </div>
+                    <div class="login_password">
+                        <input type="password" id="password" placeholder="비밀번호">
+                    </div>
+                    <div class="login_type">
+                        <span class="facebook" style="background: #1778f2;"><img src="./img/login_type/facebook_logo.png"></span>
+                        <span class="google"><img src="./img/login_type/google_logo.png"></span>
+                        <span class="apple" style="background: #000;"><img src="./img/login_type/apple_logo.png"></span>
+                    </div>
+                    <div class="login_auto">
+                        <label class="container">자동 로그인
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="login_click">
+                        <div>
+                            <span>로그인 하기<i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <div class="section_top">
         <section>
