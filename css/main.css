@@ -346,6 +346,9 @@ input[id=trigger] {
     .Menu_List{
         display: none;
     }
+    .section_log{
+        top: 35% !important;
+    }
 }
 /* section1 */
 .section1_body{
